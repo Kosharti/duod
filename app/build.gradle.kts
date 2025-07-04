@@ -17,7 +17,6 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "com.example.duodingo.HiltTestRunner"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
@@ -59,8 +58,7 @@ android {
         unitTests {
             isIncludeAndroidResources = true
             all {
-                it.useJUnitPlatform()
-                it.systemProperty("junit.jupiter.execution.timeout.default", "10s")
+                it.useJUnit()
             }
         }
     }
@@ -92,11 +90,9 @@ dependencies {
 
     // Тестирование
     testImplementation("junit:junit:4.13.2")
-    testImplementation("io.mockk:mockk:1.13.10")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.0")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.0")
-    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.10.0")
     testImplementation("org.mockito.kotlin:mockito-kotlin:5.1.0")
+    testImplementation("androidx.arch.core:core-testing:2.2.0")
 
     // Android тестирование
     androidTestImplementation("androidx.test:core:1.5.0")
