@@ -1,7 +1,5 @@
 # Duodingo - Приложение для изучения английских слов
 
-<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="120" align="right">
-
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9.0-blue.svg)](https://kotlinlang.org)
 [![Compose](https://img.shields.io/badge/Jetpack%20Compose-1.6.0-brightgreen)](https://developer.android.com/jetpack/compose)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
