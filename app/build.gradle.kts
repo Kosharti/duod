@@ -17,7 +17,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.example.duodingo.HiltTestRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -53,8 +53,6 @@ android {
 
     testOptions {
         animationsDisabled = true
-            //execution = "ANDROIDX_TEST_ORCHESTRATOR"
-
         unitTests {
             isIncludeAndroidResources = true
             all {
